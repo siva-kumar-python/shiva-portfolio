@@ -580,4 +580,76 @@ footer {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #0a192f;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  /* Hero Section */
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .hero-text,
+  .hero-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* About, Projects, Contact Layouts */
+  .about-wrapper,
+  .contact-container,
+  .contact-details-grid {
+    grid-template-columns: 1fr !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .about-card,
+  .project-card,
+  .contact-form,
+  .contact-info-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  .footer-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social a {
+    font-size: 1.4rem;
+  }
+}
 
